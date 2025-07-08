@@ -2,35 +2,84 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My App Download</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haletak - Mental Health Tracker</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #f0f0f0;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .download-btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #4CAF50;
+    body {
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      backdrop-filter: blur(4px);
+    }
+
+    .logo {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-download {
+      background-color: #00bfa6;
       color: white;
+      padding: 15px 30px;
       font-size: 18px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
+      cursor: pointer;
       text-decoration: none;
-      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background-color: #009e8c;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
-  <h1>Welcome to My App</h1>
-  <p>Click the button below to download the app:</p>
-  <a class="download-btn" href="Haltek.apk" download>Download App</a>
+  <!-- Optional Logo Here -->
+  <!-- <img class="logo" src="logo.png" alt="Haletak Logo"> -->
+
+  <h1>Haletak</h1>
+  <p>Your mental health companion</p>
+
+  <a class="btn-download" href="app.apk" download>Download the App</a>
+
+  <footer>
+    &copy; 2025 Haletak App. All rights reserved.
+  </footer>
 </body>
 
 </html>
